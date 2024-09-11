@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends Party Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Friends meetup Planner 🎉</h1>
+
+        <form id="partyForm">
+            <div class="details">
+                <h2>Party Details</h2>
+                <p><strong>Day:</strong> Saturday</p>
+                <p><strong>Date:</strong> 14/September/2024</p>
+                <p><strong>Time:</strong> 5:00 PM - no idea</p>
+                <p><strong>Location:</strong> Habiba's house, North Karachi 11-B</p>
+                
+                <div class="field">
+                    <label for="dishOption"> Option:</label>
+                    <select id="dishOption" name="dishOption">
+                        <option value="oneDish">One dish</option>
+                        <option value="orderOutside">Order from outside</option>
+                    </select>
+                </div>
+<br>
+                <div class="field">
+                    <label>
+                        <input type="checkbox" id="confirmDish" name="confirmDish">
+                        Confirm dish option
+                    </label>
+                </div>
+            </div>
+
+            <div class="friend-confirm">
+                <h2>Enter your Name</h2>
+                <input type="text" id="friendName" placeholder="Enter your name">
+                <br>
+                <br><button type="submit">Done</button>
+            </div>
+        </form>
+
+        <h2>Confirmed Friends</h2>
+        <ul id="confirmedList">
+            <!-- List of confirmed participants will appear here -->
+        </ul>
+
+        <div id="message" class="message">
+            <!-- Message will appear here after confirmation -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
